@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-image: url(images/background.jpg);
+}
+.mycard{
+    color: #000;
+    padding: 30px 25px;
+    width: 40%;
+    border-radius: 15px;
+    background: rgba( 255, 255, 255, 0.45 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3.5px );
+    -webkit-backdrop-filter: blur( 3.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.mycard h1{
+    font-size: 35px;
+    color: #2f3542;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-decoration: underline;
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search .search-bar{
+    color: #fff;
+    width: calc(100% - 40px);
+    border: none;
+    outline: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    background-color: #2f3542;
+    font-size: 15px;
+    font-family: inherit;
+    letter-spacing: 0.5px;
+}
+.search .search-bar::placeholder{
+    color: #fff;
+}
+.search button{
+    margin: 0.5em;
+    border: none;
+    border-radius: 50%;
+    width: 2.3em;
+    height: 2.3em;
+    outline: none!important;
+    background-color: #2f3542;
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+.search button i{
+    text-align: center;
+    color: #fff;
+}
+.search button:hover{
+    background-color: #487eb0;
+}
+.icon{
+    background-color: transparent;
+}
+.city{
+    font-size: 30px;
+    font-weight: 500;
+    color: #2f3640;
+    margin-bottom: 0px;
+}
+.country{
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    counter-reset: #000;
+}
+.min_max{
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+#min,
+#max{
+    font-size: 13px;
+    color: #2f3542;
+}
+.temp{
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 0;
+    color: #2f3542;
+}
+.feels{
+    font-size: 13px;
+    margin-top: 0;
+    color: #2f3542;
+}
+.ic .icons{
+    margin-bottom: 0;
+}
+.description{
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-top: 0;
+    text-transform: capitalize;
+    color: #2f3542;
+}
+.cur{
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #2f3542;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+.humidity,
+.visibility,
+.wind{
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    color: #000;
+}
+.refresh i{
+    font-size: 20px;
+    color: #2f3542;
+    cursor: pointer;
+}
+@media (max-width: 991px){
+    .mycard{
+        width: 100%;
+        padding: 19px 25px;
+        border-radius: 0;
+    }
+}

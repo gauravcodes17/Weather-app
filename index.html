@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 px-0">
+                <div class="mycard m-auto">
+                    <h1 class="text-center">Weather App</h1>
+                    <div class="search">
+                        <input type="text" class="search-bar" id="search-bar" placeholder="Search..." />
+                        <button id="btn"><i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="weather mt-3">
+                        <h2 class="city" id="city"></h2>
+                        <div class="country" id="cont"></div>
+                        <div class="min_max">
+                            <span id="min" class="mr-2"></span>
+                            <span id="max"></span>
+                        </div>
+                        <div class="row">
+                            <div class="col-8">
+                                <div class="temp" id="temp"></div>
+                            </div>
+                            <div class="col-4 text-center ic">
+                                <img src="" alt="" class="icon" id="icon" />
+                                <div class="description" id="description"></div>
+                            </div>
+                        </div>
+                        <div class="feels" id="feels"></div>
+                        <div class="cur">Current Details</div>
+                        <div class="humidity" id="humidity"></div>
+                        <div class="visibility" id="visibility"></div>
+                        <div class="pressure" id="pressure"></div>
+                        <div class="wind" id="wind"></div>
+                        <div class="refresh text-center mt-4" onclick="rel()"><i class="fas fa-sync"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
